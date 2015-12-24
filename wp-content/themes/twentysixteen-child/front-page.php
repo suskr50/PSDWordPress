@@ -16,6 +16,11 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-content" role="main">
 
+<div>
+<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
+</div>
+
+
 
 		<section class="service-wrap">
 		
@@ -61,9 +66,12 @@ get_header(); ?>
         				<?php while ( have_posts() ) : the_post(); ?>
         				<div class="individual-post">   
 	        				<?php the_post_thumbnail('thumbnail') ?>
-	        				<p><?php the_content(); ?>
-	        				<?php the_date();?> <span><?php comments_number();?></span></p>
-	        				<hr>
+	        				<div class="individual-post-content">
+		        				<p><?php $thecontent = get_the_content(); echo $thecontent; ?>
+		        				<?php $thedate = get_the_date(); ?>
+		        				<span class="thedate"> <?php echo $thedate;?></span> <span class="thecomments"><?php comments_number();?></span></p>
+		        				<hr>
+	        				</div>
         				</div>
         			<?php endwhile; // end of the loop. ?>
 					
@@ -123,22 +131,9 @@ get_header(); ?>
         			
         				<ul><li><h3> Quick Links </h3></li></ul>
 <?php $args = array(
-	'theme_location'  => '',
+	
 	'menu'            => 'Quick Links',
-	'container'       => 'div',
-	'container_class' => '',
-	'container_id'    => '',
-	'menu_class'      => 'menu',
-	'menu_id'         => '',
-	'echo'            => true,
-	'fallback_cb'     => 'wp_page_menu',
-	'before'          => '',
-	'after'           => '',
-	'link_before'     => '',
-	'link_after'      => '',
-	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-	'depth'           => 0,
-	'walker'          => ''
+	
 );?>
 
         			<?php wp_nav_menu( $args ); ?> 

@@ -14,7 +14,7 @@
 
 body {
 	
-	background-image:url("images/backlines.jpg");
+	background-image:url("img/backlines.jpg");
 }
 
 hr {
@@ -27,6 +27,28 @@ hr {
 	margin:auto;
 }
 
+
+/* Header Logo */
+    .site-title {
+    display: none;
+    }
+
+    .site-description {
+    display: none;
+    }
+
+#menu-item.primary-menu a {
+	font-size: 16px;
+	color:#555555;
+}
+
+#menu-item.primary-menu a:hover {
+	
+	font-size:16px;
+	color:#85b637;
+}
+
+
 header {
 	
 	
@@ -38,12 +60,12 @@ header li {
 	float:right;
 	margin: 40 20px;
 }
-
+/* Picture Slider */
 .slider {
-	background-color:black;
-	height:220px;
+	background-image:url("img/broadband_logo.png") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
 
+/* Service Section */
 
 .service-wrap {
 	margin:auto;
@@ -63,7 +85,13 @@ header li {
 .price-wrap{
 	padding:10px 10px 30px 10px;
 	border:1px solid #d3d3d3;
+	background-color:#fdfcfa;
+	-moz-box-shadow: inset 0 0 5px 5px #f6f5f1;
+-webkit-box-shadow: inset 0 0 5px 5px#f6f5f1;
+box-shadow: inset 0 0 5px 5px #f6f5f1;
 }
+
+
 
 .desc-box {
 	min-width:200px;
@@ -223,11 +251,20 @@ wpcf7-form {
 }
 
 .work-with-us a {
-	color:white;
-	border-radius:3px;
-	background-color:blue;
-
-
+ 	color: white;
+	font-size: 18px;
+	padding: 10px 20px 10px 20px;
+	font-family: "Abel";
+    text-transform: uppercase;
+    text-align: center;
+  	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.4);
+  	text-decoration:none;
+ 	 border-style: 1 px solid rgb(137, 180, 44);
+   border-radius: 5px;
+ 	background-image: -moz-linear-gradient( 90deg, rgb(38,92,121) 0%, rgb(60,170,220) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(38,92,121) 0%, rgb(60,170,220) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(38,92,121) 0%, rgb(60,170,220) 100%);
+  box-shadow: 0.5px 0.866px 3px 0px rgba(41, 97, 132, 0.45),inset 1px 1.732px 0px 0px rgba(255, 255, 255, 0.34);
 }
 
 .recent-section {
@@ -235,24 +272,41 @@ wpcf7-form {
 	float:left;
 }
 
-.individual-post img {
-	height:50px;
-	height:50px;
+
+.post-wrapper, .feature-wrapper, .work-with-us {
 	float:left;
-	margin-right:5px;
+	padding: 5px 10px 5px 10px;
+	font-size:12px;
+	width:33.3%;
 }
 
-.individual-post p {
+ .thedate {
+	font-size:10px;
+	color:#aaaaaa;
+}
+
+.thecomments {
+	font-size:10px;
+	color:#103d54
+}
+
+.individual-post {
+	
 	
 }
-.post-wrapper {
+
+.individual-post img {
+	height:60px;
+	height:60px;
 	float:left;
-	margin-right:25px;
+	margin-right:15px;
+	
 }
 
-.work-with-us {
-	float:right;
+.individual-post-content {
+	
 }
+
 
 .clearfix:after { 
    content: "."; 
