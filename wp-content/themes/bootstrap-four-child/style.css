@@ -1,0 +1,129 @@
+/*
+Theme Name: Bootstrap Four
+Theme URI: http://bootstrapfour.hyprtxt.com/
+Author: Taylor Young
+Author URI: http://hyprtxt.com/
+Description:  bootstrap-four-child
+Template:     accelerate-theme
+Version: 0.2.3
+License: MIT
+License URI: http://www.gnu.org/licenses/gpl.html
+Tags: one-column, right-sidebar, responsive-layout, fluid-layout, custom-menu
+Text Domain: bootstrap-four-child
+*/
+
+/* The bootstrap.css file is auto-enqueued in functions.php, also font-awesome */
+
+/* YOU SHOULD BE MAKING A CHILD THEME. Don't make me be the bad guy and erase all your hard work with a theme update.
+ I don't want to destroy your world. A child theme template is in the works, watch the GitHub repo 
+ (https://github.com/Hyprtxt/bootstrapfour) to keep up with developments */
+
+
+1
+  
+@import url("../bootstrap-four/style.css");
+
+
+
+
+h1 {
+	font-family: 'Nunito', sans-serif;
+	font-size:44px;
+	font-weight:700;
+}
+
+h2 {
+	font-family: 'Nunito', sans-serif;
+	font-size:20px;
+	font-weight:400;
+}
+
+h3 {
+	font-family: 'Nunito', sans-serif;
+	font-size:18px;
+font-weight:700;
+}
+
+p {
+	font-family: 'Nunito', sans-serif;
+}
+
+
+#top {
+	background-image:url("img/Intropic.png");
+	background-size:cover;
+	height:600px;
+	color:white;
+}
+
+.top-text {
+	margin-top:350px;
+}
+
+#about-wrap {
+	margin-top:66px;
+	margin-bottom:66px;
+}
+
+#about-wrap h1 {
+	color:rgb(14,191,221);
+}
+
+#about-text {
+	padding-top:66px;
+}
+
+#team-wrap {
+	background-color:blue;
+	background-color:rgb(14,191,221);
+	color:white;
+	padding-bottom:66px;
+	text-align:center;
+}
+
+#team-title {
+	text-aligh:center;
+	padding-top:60px;
+	padding-bottom:110px;
+}
+#team {
+	padding-bottom:100px;
+}
+.team-member {
+	
+}
+
+
+button {
+	width:100%;
+	height:40px;
+	border: 1px solid white;
+	background-color:rgb(14,191,221);
+	border-radius:50px;
+	text-transform:uppercase;
+
+}
+
+
+#map-wrap {
+	width:100%;
+	height:400px;
+	}
+
+
+#footer {
+	background-color:rgb(69,73,77);
+	color: rgb(115, 118, 122);
+  line-height: 1.2;
+  text-align: left;
+ font-size: 12px;
+  font-family: "MuseoSans";
+}
+
+
+
+
+
+
+
+
