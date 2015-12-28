@@ -12,6 +12,56 @@
  	
 @import url("../twentysixteen/style.css");
 
+
+/* Grid based on a 940px space with a 20px padding all around*/
+
+
+.grid {
+	float:left;
+	padding:20px;
+}
+
+/* Column notation 12 = 1/2, 14=1/4 ect */
+
+.col-1{
+	width:100%;
+	background-color:pink;
+}
+.col-12 {
+	width:47.8723%;
+	background-color:orange;
+}
+.col-13 {
+	width:31.1702%;
+}
+.col-23 {
+	
+	width:62.3404%
+}
+.col-14 {
+	width:22.8723%;
+	background-color:purple;
+}
+.col-16 {
+	width:14.4680%;
+}
+
+.col-18{
+	width:12.50%;
+}
+
+
+
+.outerbox {
+
+}
+
+.innerbox {
+	padding:10px;
+}
+
+
+
 body {
 	
 	background-image:url("img/backlines.jpg");
@@ -21,6 +71,7 @@ hr {
 	color:#d9d9d9;
 }
 #main {
+
 	border-left: 1px solid #d9d9d9;
 	border-right: 1px solid #d9d9d9;
 	border-bottom: 1px solid #d9d9d9;
@@ -42,7 +93,7 @@ hr {
 	color:#555555;
 }
 
-#menu-item.primary-menu a:hover {
+.main-navigation li:hover>a {
 	
 	font-size:16px;
 	color:#85b637;
@@ -75,11 +126,11 @@ header li {
 }
 
 .desc-box, .contact-us {
-	width:25%;
+	
 	background-color:#fdfcfa;
 	text-align:center;
-	float:left;
-	padding:10px 10px 10px 0px;
+	
+	
 }
 
 .price-wrap{
@@ -91,7 +142,15 @@ header li {
 box-shadow: inset 0 0 5px 5px #f6f5f1;
 }
 
-
+.price-wrap-contact{
+	padding:9px 9px 29px 9px;
+	
+	background-color:#fdfcfa;
+	-moz-box-shadow: inset 0 0 5px 5px #f6f5f1;
+-webkit-box-shadow: inset 0 0 5px 5px#f6f5f1;
+box-shadow: inset 0 0 5px 5px #f6f5f1;
+border: 2px solid blue;
+}
 
 .desc-box {
 	min-width:200px;
@@ -104,9 +163,7 @@ box-shadow: inset 0 0 5px 5px #f6f5f1;
 /* Contact Form */
 
 
-.contact-us {
-border: 1px solid blue;
-}
+
 
 wpcf7-form { 
 	background:#dcc8a5; 
@@ -268,17 +325,14 @@ wpcf7-form {
 }
 
 .recent-section {
-	width:300px;
-	float:left;
+	i
 }
 
 
 .post-wrapper, .feature-wrapper, .work-with-us {
-	float:left;
 	padding: 5px 10px 5px 10px;
 	font-size:12px;
-	width:33.3%;
-}
+	}
 
  .thedate {
 	font-size:10px;
@@ -338,15 +392,15 @@ wpcf7-form {
 /* First Footer */
 
 .info-wrapper {
-	width:25%;
+	
 	min-width:100px;
-	float:left;
+	
 }
 
 .link-wrapper {
-	width:60%;
+	
 	padding:10px 10px 10px 10px;
-	float:left;
+	
 }
 
 .info-wrapper a {
@@ -354,14 +408,16 @@ wpcf7-form {
 	color:white;
 }
 
-.keep-contact-wrapper {
-	width:40%;
-	float:right;
-}
+
 
 .keep-contact-wrapper img {
 	width:45px;
 	height:55px;
+}
+
+.keep-contact-wrapper ul{
+	margin:0;
+	padding:0;
 }
 
 .keep-contact-wrapper li{
@@ -373,6 +429,49 @@ wpcf7-form {
 	color:white;
 	height:20px;
 }
+
+/* Meteor Slides */
+
+
+.box-1 {width:900px;margin:10px;padding:10px;
+	background:#d8d7d7;
+	position:absolute;top:0;left:25%;
+	display:none;
+	
+}
+
+.box-1 h1 {	font-size: 43px;
+  font-family: "Myriad Pro";
+  color: rgb(85, 85, 85);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+
+.box-1 p {
+	
+	font-size: 20px;
+  font-family: "Myriad Pro";
+  color: rgb(85, 85, 85);
+  line-height: 1.3;
+  text-align: left;
+}
+
+.We_buy_lots_of_circuits_from_the_carriers_which {
+  font-size: 20px;
+  font-family: "Myriad Pro";
+  color: rgb(85, 85, 85);
+  line-height: 1.3;
+  text-align: left;
+  position: absolute;
+  
+}
+
+
+
+
+
+/* Footer */
 
 footer {
 	background-color:#0f1213;

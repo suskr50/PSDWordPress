@@ -73,7 +73,8 @@
 	<?php // Check for multiple slides
 	
 	if ( $meteor_loop->post_count > 1 ) : ?>
-		
+
+
 		<?php // Adds Previous/Next and Paged navigation
 		
 		if ( $meteor_nav == "navboth" ) : ?>
@@ -114,15 +115,18 @@
 	
 		<?php // Loop which loads the slideshow
 			
-		while ( $meteor_loop->have_posts() ) : $meteor_loop->the_post(); ?>
+		while ( $meteor_loop->have_posts() ) : $meteor_loop->the_post(); 
+		$thedesc = get_field("descriptions"); ?>
 		
 			<?php // Use first slide image as shim to scale slideshow
 			
 			// if ( $meteor_count == 1 ) {
 			
 			if ( $meteor_count == 1 && $meteor_loop->post_count > 1 ) {
+
 			
-				$meteor_shim = wp_get_attachment_image_src( get_post_thumbnail_id(), 'featured-slide');
+				$meteor_shim = wp_get_attachment_image_src( get_post_thumbnail_id());
+				
 				
 				echo '<img style="visibility: hidden;" class="meteor-shim" src="' . $meteor_shim[0] . '" alt="" />';
 				
@@ -143,7 +147,19 @@
 					<?php the_post_thumbnail( 'featured-slide', array( 'title' => get_the_title() ) ); ?>
 					
 				<?php endif; ?>
-				<h1> <?php the_title(); ?>
+
+					<div class="box-1">
+									
+									
+									<h1> broadband.com is the leader in
+					savings -v get a better deal </h1>
+				<?php var_dump($meteor_shim); ?>
+					<p>We buy lots of circuits from the carriers
+					which means we can get preffered pricing.
+					We then pass the savings on to you!
+
+									<p > <?php the_field('descriptions'); ?></p>
+					</div>
 			
 			</div><!-- .mslide -->
 			
