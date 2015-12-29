@@ -60,6 +60,15 @@ function sksthemeexp_setup() {
 		'caption',
 	) );
 
+/* add logo to Apperance -> Customize -> Site */
+	// Create a custom image size for Site Logo.
+add_image_size( 'mytheme-logo', 200, 200 );
+ 
+// Declare theme support for Site Logo.
+add_theme_support( 'site-logo', array(
+    'size' => 'mytheme-logo',
+) );
+
 	/*
 	 * Enable support for Post Formats.
 	 * See https://developer.wordpress.org/themes/functionality/post-formats/
