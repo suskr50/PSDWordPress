@@ -300,9 +300,7 @@ i {
 	font-style: italic;
 }
 
-blockquote {
-	margin: 0 1.5em;
-}
+
 
 address {
 	margin: 0 0 1.5em;
@@ -1042,35 +1040,254 @@ a:active {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
-.sticky {
-	display: block;
+
+/* Typography */
+.entry-title {
+    margin: 0 0 2rem;
+    font-weight: 900;
+    font-size: 40px;
+    font-size: 4rem;
+    line-height: 1.3em;
+    color: #000;
+    color: hsl(0, 0%, 0%);
 }
 
-.hentry {
-	margin: 0 0 1.5em;
+.entry-content a { 
+    text-decoration: underline; 
+}
+                    
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 { margin-bottom: .4em; }
+
+.entry-content h1 {
+    font-size: 32px;
+    font-size: 3.2rem;
 }
 
-.byline,
-.updated:not(.published) {
-	display: none;
+.entry-content h2 {
+    font-size: 30px;
+    font-size: 3.0rem;
 }
 
-.single .byline,
-.group-blog .byline {
-	display: inline;
+.entry-content h3 {
+    font-size: 28px;
+    font-size: 2.8rem;
 }
 
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
+.entry-content h4 {
+    font-size: 26px;
+    font-size: 2.6rem;
 }
 
-.page-links {
-	clear: both;
-	margin: 0 0 1.5em;
+.entry-content h5 {
+    font-size: 24px;
+    font-size: 2.4rem;
 }
 
+.entry-content h6 {
+    font-size: 22px;
+    font-size: 2.2rem;
+}
+
+.entry-content p,
+.entry-content ul,
+.entry-content ol {
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 1.6em;
+}
+
+.entry-content blockquote p {
+    font-size: 28px;
+    font-size: 2.8rem;
+    line-height: 1.5em;
+}
+
+/* Smaller fonts for smaller screens */
+@media screen and (max-width: 680px) {
+    .entry-title {
+        font-size: 32px;
+        font-size: 3.2rem;
+        line-height: 1.3em;
+    }
+    .entry-content h1 {
+        font-size: 28px;
+        font-size: 2.8rem;
+    }
+
+    .entry-content h2 {
+        font-size: 26px;
+        font-size: 2.6rem;
+    }
+
+    .entry-content h3 {
+        font-size: 24px;
+        font-size: 2.4rem;
+    }
+
+    .entry-content h4 {
+        font-size: 22px;
+        font-size: 2.2rem;
+    }
+
+    .entry-content h5 {
+        font-size: 20px;
+        font-size: 2rem;
+    }
+
+    .entry-content h6 {
+        font-size: 18px;
+        font-size: 1.8rem;
+    }
+
+    .entry-content p,
+    .entry-content ul,
+    .entry-content ol  {
+        font-size: 18px;
+        font-size: 1.8rem;
+    }
+    
+    .entry-content blockquote p {
+        font-size: 22px;
+        font-size: 2.2rem;
+        line-height: 1.5em;
+    }
+}
+
+/* Meta */
+.category-list {
+    margin: 1.3em 0 1em;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+.category-list a {
+    color: #333;
+    color: hsl(0, 0%, 10%);
+}
+
+.category-list a:hover {
+    color: #000;
+    color: hsl(0, 0%, 0%);
+}
+
+.entry-meta {
+    margin-bottom: 2rem;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+
+.entry-meta a { font-weight: 600; }
+
+.entry-footer {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 2em;
+}
+
+.entry-footer ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.entry-footer li {
+    display: inline-block;
+    margin-right: 4rem;
+}
+
+.entry-footer a {
+    margin-left: .5rem;
+}
+                
+
+@media screen and (min-width: 1320px){
+    .single .entry-meta {
+        width: 120px;
+        margin-left: -160px;
+        float: left;
+        text-align: right;
+    }
+    
+    .single .byline,
+    .single .posted-on {
+        display: block;
+        margin-bottom: 1em;
+    }
+}
+@media screen and (max-width: 1319px){
+    .posted-on:before {
+        content: ' on ';
+    }
+    .posted-on:after {
+        content: '.';
+    }
+}
+/* Blockquotes */
+blockquote {
+    padding: 1em 1.5em 0;
+    margin-bottom: 1em;
+    font-style: italic;
+    border-top: solid 1px hsl(0, 0%, 80%);
+    border-bottom: solid 1px hsl(0, 0%, 80%);
+}
+
+blockquote em { 
+    font-style: normal; 
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 1em;
+    margin-left: 40%;
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    line-height: 1.5em;
+    text-align: right;
+}
+
+blockquote.alignleft {
+    width: 50%;
+    float: left;
+    padding: 1em 0 0;
+    margin-right: 2em;
+}
+
+blockquote.alignright {
+    width: 50%;
+    float: right;
+    padding: 1em 0 0;
+    margin-left: 2em;
+}
+
+/* Blockquotes responsive */
+/* Optional rules that set blockquotes to full width on smaller screens */
+@media screen and (max-width: 780px) {
+    blockquote.alignleft,
+    blockquote.alignright { width: 40%; }
+}
+
+@media screen and (max-width:600px) {
+    blockquote.alignleft,
+    blockquote.alignright {
+        width: 100%;
+        padding: 1em 1.5em 0;   
+    }
+}
+                     
+     
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/

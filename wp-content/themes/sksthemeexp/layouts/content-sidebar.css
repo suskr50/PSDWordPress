@@ -6,16 +6,17 @@
  * Learn more: https://developer.wordpress.org/themes/basics/template-files/
 */
 
-.site-main {
+.site-main{
     background: #b2b2b2;
+    padding-bottom: 4em;
 }
-.site-content .widget-area {
-    width: 380px;
-    float: right;
-    padding: 4rem;
-    background: #fff;
+
+.single .site-main,
+.page .site-main { 
+    background: #fff; 
     background: hsl(0, 0%, 100%);
 }
+         
 .site-footer {
     clear: both;
     width: 100%;
@@ -23,7 +24,7 @@
 
 .entry-header,
 .entry-content,
-.entry-meta,
+
 .entry-footer,
 .tag-links,
 .post-navigation,
@@ -54,7 +55,7 @@
     
     .entry-header,
     .entry-content,
-    .entry-meta,
+  
     .entry-footer,
     .tag-links,
     .post-navigation,
