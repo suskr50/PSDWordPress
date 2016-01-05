@@ -25,11 +25,11 @@
 
 .col-1{
 	width:100%;
-	background-color:pink;
+
 }
 .col-12 {
 	width:47.8723%;
-	background-color:orange;
+	
 }
 .col-13 {
 	width:31.1702%;
@@ -40,7 +40,7 @@
 }
 .col-14 {
 	width:22.8723%;
-	background-color:purple;
+	
 }
 .col-16 {
 	width:14.4680%;
@@ -88,16 +88,157 @@ hr {
     display: none;
     }
 
-#menu-item.primary-menu a {
-	font-size: 16px;
-	color:#555555;
+  
+
+.easy-logo {
+	float:left;
 }
 
-.main-navigation li:hover>a {
-	
-	font-size:16px;
-	color:#85b637;
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+
+
+.main-navigation {
+
+
 }
+
+
+.main-navigation a {
+       color: #555555;
+     
+     
+  
+}
+
+.main-navigation li {
+	font-size:20px;
+}
+
+
+.main-navigation li:hover > a {
+    color: #85b637;
+ 
+    background: white;
+   
+}
+
+.main-navigation ul ul a:hover {
+    background: #313131;
+    
+}
+
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_item > a:hover,
+.main-navigation .current-menu-item > a:hover {
+    background: white;
+    color: #3f7b2d;
+   
+}
+
+.main-navigation .current_page_ancestor {
+    background: #3f7b2d;
+   
+}
+
+.main-navigation ul ul .current_page_parent,
+.main-navigation .current_page_parent .current_page_item > a {
+    color: #fff;
+  
+    background:#3f7b2d;
+   
+} 
+
+.menu-toggle {
+	display:none;
+}
+    
+
+@media screen and (max-width: 600px) {
+	.menu-toggle {
+            display: block;
+            height: 3.75em;
+            padding: 0 1em;
+            font-weight: normal;
+            font-size: 14px;
+            font-size: 1.4rem;
+            text-decoration: none;
+            line-height: 3.75em;
+            color: white;
+	}
+        
+	.main-navigation.toggled .nav-menu {
+		display: block;
+		border-top: 1px solid;
+		border-top-color: #fff;
+		border-top-color: hsla(0, 0%, 100%, .5);
+	}
+
+	.main-navigation ul {
+            display: none;
+            padding-left: 0;
+	}
+        
+	.main-navigation li { 
+		float: none; 
+	}
+
+	.main-navigation li a { 
+		padding: 1.3em 2em; 
+	}
+
+	.main-navigation li li a { 
+		padding-left: 4em; 
+	}
+
+	.main-navigation li li li a { 
+		padding-left: 6em; 
+	}
+
+	.main-navigation li:hover > a {
+		background: #313131;
+		background: hsl(0, 0%, 19%);
+	}
+	
+	.main-navigation ul ul,
+	.main-navigation ul ul ul {
+		position: relative;
+		top: inherit;
+		left: 0;
+		display: block;
+		float: none;
+		background: #313131;
+		
+	}
+	
+	.main-navigation ul ul a { width: 100%; }
+
+	.main-navigation ul a:hover,
+	.main-navigation ul ul a:hover {
+		background: #4d4d4d;
+		
+	}
+
+	.main-navigation .current_page_ancestor { background: inherit; }
+
+	.main-navigation ul ul .current_page_parent {
+		color: inherit;
+		background: inherit;
+	}
+
+	.main-navigation .current_page_item > a,
+	.main-navigation .current_page_item > a:hover,
+	.main-navigation .current_page_item li:hover,
+	.main-navigation .current_page_parent .current_page_item > a  {
+		color: #fff;
+		background: ##3f7b2d;
+	 
+	}
+        
+} // End responsive menu
+
 
 
 header {
@@ -111,10 +252,18 @@ header li {
 	float:right;
 	margin: 40 20px;
 }
-/* Picture Slider */
+/*--------------------------------------------------------------
+## Banner
+--------------------------------------------------------------*/
+
 .slider {
-	background-image:url("img/broadband_logo.png") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+/*	background-image:url("img/broadband_logo.png") no-repeat scroll left center / cover rgba(0, 0, 0, 0); */
+border-top:1px solid black;
+border-bottom:1px solid black;
+padding: 40px 0 0 0;
 }
+
+
 
 /* Service Section */
 
@@ -469,12 +618,8 @@ wpcf7-form {
 
 
 
-
-
-/* Footer */
-
-footer {
-	background-color:#0f1213;
+.site-info {
+		background-color:#0f1213;
 	color:white;
 	font-size:12px;
 	font-type:"Arial";
@@ -482,19 +627,7 @@ footer {
 	border-top:1px solid #333333;
 }
 
-footer ul {
-	list-style:none;
-}
-footer li {
-	float:right;
-	margin: 0 5px;
-	color:purple;
-}
+.huge_it_slideshow_dots_active_1 {
+			background:pink;
+		}
 
-.float-left {
-	float:left;
-}
-
-.float-right {
-	float-right;
-}

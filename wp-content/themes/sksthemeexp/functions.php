@@ -62,7 +62,7 @@ function sksthemeexp_setup() {
 
 /* add logo to Apperance -> Customize -> Site */
 	// Create a custom image size for Site Logo.
-add_image_size( 'mytheme-logo', 200, 200 );
+add_image_size( 'mytheme-logo', 270, 200 );
  
 // Declare theme support for Site Logo.
 add_theme_support( 'site-logo', array(

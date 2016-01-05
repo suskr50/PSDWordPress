@@ -4,7 +4,7 @@
 Plugin Name: Huge IT Slider
 Plugin URI: http://huge-it.com/slider
 Description: Huge IT slider is a convenient tool for organizing the images represented on your website into sliders. Each product on the slider is assigned with a relevant slider, which makes it easier for the customers to search and identify the needed images within the slider.
-Version: 3.0.3
+Version: 3.0.4
 Author: Huge-IT
 Author URI: http://huge-it.com/
 License: GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
@@ -335,6 +335,22 @@ function huge_it_slider_featured_plugins()
 		</div>			  				
 		<div class="button-block">
 			<a href="http://huge-it.com/portfolio-gallery/" target="_blank">View Plugin</a>
+		</div>
+	</div>
+</div>
+<div class="element hugeitmicro-item">
+	<div class="left-block">
+		<div class="main-image-block">
+			<img src="<?php echo plugins_url( 'images/wp-forms-logo.jpg' , __FILE__ ); ?>">
+		</div>
+	</div>
+	<div class="right-block">
+		<div class="title-block"><h3>WordPress Forms</h3></div>
+		<div class="description-block">
+			<p>Forms are one of the most important elements of WordPress website because without Forms Builder you will not be able to always keep in touch with your visitors</p>
+		</div>			  				
+		<div class="button-block">
+			<a href="http://huge-it.com/forms/" target="_blank">View Plugin</a>
 		</div>
 	</div>
 </div>

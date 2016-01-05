@@ -1,0 +1,490 @@
+/*
+ Theme Name:   sksthemeexp Child
+ Theme URI:    http://example.com/accelerate-theme-child/
+ Description:  sksthemeexp Child Theme
+ Author:       Susan Schrum
+ Author URI:   http://www.skswebdev.com
+ Template:     sksthemeexp
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  sksthemeexp-child
+*/
+ 	
+@import url("../sksthemeexp/style.css");
+
+
+/* Grid based on a 940px space with a 20px padding all around*/
+
+
+.grid {
+	float:left;
+	padding:20px;
+}
+
+/* Column notation 12 = 1/2, 14=1/4 ect */
+
+.col-1{
+	width:100%;
+	background-color:pink;
+}
+.col-12 {
+	width:47.8723%;
+	background-color:orange;
+}
+.col-13 {
+	width:31.1702%;
+}
+.col-23 {
+	
+	width:62.3404%
+}
+.col-14 {
+	width:22.8723%;
+	background-color:purple;
+}
+.col-16 {
+	width:14.4680%;
+}
+
+.col-18{
+	width:12.50%;
+}
+
+
+
+.outerbox {
+
+}
+
+.innerbox {
+	padding:10px;
+}
+
+
+
+body {
+	
+	background-image:url("img/backlines.jpg");
+}
+
+hr {
+	color:#d9d9d9;
+}
+#main {
+
+	border-left: 1px solid #d9d9d9;
+	border-right: 1px solid #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
+	margin:auto;
+}
+
+
+
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.site-branding {
+	display: none;
+}
+
+header {
+	
+	
+}
+header ul {
+	list-style:none;
+}
+header li {
+	float:right;
+	margin: 40 20px;
+}
+/* Picture Slider */
+.slider {
+	background-image:url("img/broadband_logo.png") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+}
+
+/* Service Section */
+
+.service-wrap {
+	margin:auto;
+	margin-top:10px;
+	padding:10px 10px 10px 10px;
+	
+}
+
+.desc-box, .contact-us {
+	
+	background-color:#fdfcfa;
+	text-align:center;
+	
+	
+}
+
+.price-wrap{
+	padding:10px 10px 30px 10px;
+	border:1px solid #d3d3d3;
+	background-color:#fdfcfa;
+	-moz-box-shadow: inset 0 0 5px 5px #f6f5f1;
+-webkit-box-shadow: inset 0 0 5px 5px#f6f5f1;
+box-shadow: inset 0 0 5px 5px #f6f5f1;
+}
+
+.price-wrap-contact{
+	padding:9px 9px 29px 9px;
+	
+	background-color:#fdfcfa;
+	-moz-box-shadow: inset 0 0 5px 5px #f6f5f1;
+-webkit-box-shadow: inset 0 0 5px 5px#f6f5f1;
+box-shadow: inset 0 0 5px 5px #f6f5f1;
+border: 2px solid blue;
+}
+
+.desc-box {
+	min-width:200px;
+ }
+
+ .desc-box hr {
+ 	color:#d3d3d3;
+ }
+
+/* Contact Form */
+
+
+
+
+wpcf7-form { 
+	background:#dcc8a5; 
+	padding:20px; 
+	border:2px solid #b2c4d4;
+	margin-bottom:30px; 
+	border-radius:7px; 
+}
+ 
+.wpcf7-form input { 
+	 
+	padding:5px 7px; 
+	border:1px solid #b2c4d4;
+	border-radius:5px;
+}
+ 
+.wpcf7-form textarea { 
+	
+	padding:5px 0px 5px 7px; 
+	border:1px solid #b2c4d4;
+	border-radius:7px;
+	height:70px;
+}
+ 
+.wpcf7-form p { 
+	color:	#7794aa;
+	margin-top:10px; 
+	text-align:center;
+	font-size:14px;
+
+}
+ 
+.wpcf7-form .wpcf7-submit
+{
+
+  	color: white;
+	font-size: 22px;
+	padding: 10px 20px 10px 20px;
+  font-family: "Abel";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+    text-align: center;
+  text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.4);
+  text-decoration:none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(137, 180, 44);
+  border-radius: 5px;
+ background-image: -moz-linear-gradient( 90deg, rgb(38,92,121) 0%, rgb(60,170,220) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(38,92,121) 0%, rgb(60,170,220) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(38,92,121) 0%, rgb(60,170,220) 100%);
+  box-shadow: 0.5px 0.866px 3px 0px rgba(41, 97, 132, 0.45),inset 1px 1.732px 0px 0px rgba(255, 255, 255, 0.34);
+  }
+
+
+
+
+
+
+
+
+
+
+.desc-box h1, .contact-us h1, .work-with-us h1 {
+	color:#444444;
+	font-size:26px;
+	
+}
+
+.desc-box h2, .contact-us h2, .work-with-us h1 {
+	color:#888888;
+	font-size: 14px;
+}
+
+
+.desc-box a
+{
+	color: white;
+	font-size: 22px;
+	padding: 10px 20px 10px 20px;
+  font-family: "Abel";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 0.909;
+  text-align: center;
+  text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.4);
+  text-decoration:none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(137, 180, 44);
+  border-radius: 5px;
+  background-image: -moz-linear-gradient( 90deg, rgb(153,195,63) 0%, rgb(181,223,91) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(153,195,63) 0%, rgb(181,223,91) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(153,195,63) 0%, rgb(181,223,91) 100%);
+
+}
+
+
+.desc-box ul, .contact-us ul {
+	list-style-type:none;
+	font-size:12px;
+	color:#444444;
+	padding-bottom:30px;
+
+}
+	.desc-box li {
+		
+	border-bottom:1px dashed #d3d3d3;
+	padding:5px;
+
+}
+
+.clear {
+	clear:both;
+}
+
+
+/* Recent Post Section */
+
+.recent-posts {
+	
+	text-align:justify;
+}
+
+.recent-posts h2{
+	font-size:18px;
+	font-weight:bold;
+}
+
+.recent-post p {
+	font-size:12px;
+	color:#444444;
+}
+
+
+
+.work-with-us img {
+	float:left;
+	width:50px;
+	height:35px;
+	margin: 0 5px 5px 0;
+}
+
+.work-with-us a {
+ 	color: white;
+	font-size: 18px;
+	padding: 10px 20px 10px 20px;
+	font-family: "Abel";
+    text-transform: uppercase;
+    text-align: center;
+  	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.4);
+  	text-decoration:none;
+ 	 border-style: 1 px solid rgb(137, 180, 44);
+   border-radius: 5px;
+ 	background-image: -moz-linear-gradient( 90deg, rgb(38,92,121) 0%, rgb(60,170,220) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(38,92,121) 0%, rgb(60,170,220) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(38,92,121) 0%, rgb(60,170,220) 100%);
+  box-shadow: 0.5px 0.866px 3px 0px rgba(41, 97, 132, 0.45),inset 1px 1.732px 0px 0px rgba(255, 255, 255, 0.34);
+}
+
+.recent-section {
+	i
+}
+
+
+.post-wrapper, .feature-wrapper, .work-with-us {
+	padding: 5px 10px 5px 10px;
+	font-size:12px;
+	}
+
+ .thedate {
+	font-size:10px;
+	color:#aaaaaa;
+}
+
+.thecomments {
+	font-size:10px;
+	color:#103d54
+}
+
+.individual-post {
+	
+	
+}
+
+.individual-post img {
+	height:60px;
+	height:60px;
+	float:left;
+	margin-right:15px;
+	
+}
+
+.individual-post-content {
+	
+}
+
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+
+.social-footer {
+	background-color:#1e2023;
+	color:white;
+	font-size:12px;
+	font-type:"Arial";
+	font-weight:regular;
+	padding:10px 10px 10px 10px;
+}
+
+.social-footer h3 {
+	font-size:14px;
+	font-weight:bold;
+}
+
+.social-footer ul {
+	list-style-type:none;
+}
+
+/* First Footer */
+
+.info-wrapper {
+	
+	min-width:100px;
+	
+}
+
+.link-wrapper {
+	
+	padding:10px 10px 10px 10px;
+	
+}
+
+.info-wrapper a {
+	text-decoration:none;
+	color:white;
+}
+
+
+
+.keep-contact-wrapper img {
+	width:45px;
+	height:55px;
+}
+
+.keep-contact-wrapper ul{
+	margin:0;
+	padding:0;
+}
+
+.keep-contact-wrapper li{
+	float:left;
+	margin:0 4px;
+}
+
+.mail-wrapper {
+	color:white;
+	height:20px;
+}
+
+/* Meteor Slides */
+
+
+.box-1 {width:900px;margin:10px;padding:10px;
+	background:#d8d7d7;
+	position:absolute;top:0;left:25%;
+	display:none;
+	
+}
+
+.box-1 h1 {	font-size: 43px;
+  font-family: "Myriad Pro";
+  color: rgb(85, 85, 85);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+
+.box-1 p {
+	
+	font-size: 20px;
+  font-family: "Myriad Pro";
+  color: rgb(85, 85, 85);
+  line-height: 1.3;
+  text-align: left;
+}
+
+.We_buy_lots_of_circuits_from_the_carriers_which {
+  font-size: 20px;
+  font-family: "Myriad Pro";
+  color: rgb(85, 85, 85);
+  line-height: 1.3;
+  text-align: left;
+  position: absolute;
+  
+}
+
+
+
+
+
+/* Footer */
+
+footer {
+	background-color:#0f1213;
+	color:white;
+	font-size:12px;
+	font-type:"Arial";
+	font-weight:regular;
+	border-top:1px solid #333333;
+}
+
+footer ul {
+	list-style:none;
+}
+footer li {
+	float:right;
+	margin: 0 5px;
+	color:purple;
+}
+
+.float-left {
+	float:left;
+}
+
+.float-right {
+	float-right;
+}

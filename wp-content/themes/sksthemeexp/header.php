@@ -46,7 +46,7 @@
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<?php if ( function_exists( 'jetpack_the_site_logo' ) ) jetpack_the_site_logo(); ?>
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'sksthemeexp' ); ?></button>
+			
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			<?php sksthemeexp_social_menu() ?>
 		</nav><!-- #site-navigation -->

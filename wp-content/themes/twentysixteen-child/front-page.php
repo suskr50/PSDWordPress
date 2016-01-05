@@ -17,8 +17,10 @@ get_header(); ?>
 	<main id="main" class="site-content" role="main">
 
 
-<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
-
+<section class=" grid col-1">
+  <div class="slider">
+   <?php echo do_shortcode("[metaslider id=1714]"); ?> </div>
+ </section>
 
 
 
@@ -55,7 +57,7 @@ get_header(); ?>
 
 
         <!---- Recent Post Section ---->
-        <section class="recent-posts grid col-1">
+        <section class="recent-posts col-1">
 
         	<div class="post-wrapper grid col-13">
         		<div class="recent-section">
@@ -126,7 +128,7 @@ get_header(); ?>
 
 
 
-<section class="social-footer grid col-1">
+<section class="social-footer  col-1">
 
 
  <div class="link-wrapper grid col-23">

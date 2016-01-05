@@ -566,16 +566,19 @@ a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+
+
+
+
 .main-navigation {
     position: relative;
-    float: left;
+    float: 	right;
     width: 100%;
     display: block;
     clear: both;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    background: #313131;
-    background: hsl(0, 0%, 19%);
+   
 }
 .main-navigation ul {
     list-style: none;
@@ -583,7 +586,7 @@ a:active {
     padding-left: 0;
 }
 .main-navigation li {
-    float: left;
+    float: right;
     position: relative;
 }
 .main-navigation a {
@@ -593,8 +596,8 @@ a:active {
     font-size: 1.4rem;
     text-decoration: none;
     line-height: 1.3em;
-    color: white;
-    color: hsl(0, 0%, 100%);
+    color: #555555;
+   
 }
 .main-navigation ul ul {
     position: absolute;
@@ -603,8 +606,8 @@ a:active {
     display: none;
     float: left;
     padding: 0;
-    background: #4d4d4d;
-    background: hsl(0, 0%, 30%);
+    background: #fff;
+  
 }
 .main-navigation ul ul ul {
     left: 100%;
@@ -616,10 +619,10 @@ a:active {
 .main-navigation ul ul li {
 }
 .main-navigation li:hover > a {
-    color: #fff;
-    color: hsl(0, 0%, 100%);
-    background: #4d4d4d;
-    background: hsl(0, 0%, 30%);
+    color: #85b637;
+ 
+    background: white;
+   
 }
 .main-navigation ul ul :hover > a {
 }
@@ -635,22 +638,26 @@ a:active {
 .main-navigation .current_page_item > a:hover,
 .main-navigation .current-menu-item > a:hover {
     background: white;
-    color: #313131;
-    color: hsl(0, 0%, 19%);
+    color: #3f7b2d;
+   
 }
 
 .main-navigation .current_page_ancestor {
-    background: #4d4d4d;
-    background: hsl(0, 0%, 30%);
+    background: #3f7b2d;
+   
 }
 
 .main-navigation ul ul .current_page_parent,
 .main-navigation .current_page_parent .current_page_item > a {
     color: #fff;
-    color: hsl(0, 0%, 100%);
-    background: #313131;
-    background: hsl(0, 0%, 19%);
+  
+    background:#3f7b2d;
+   
 } 
+
+.menu-toggle {
+	display:none;
+}
     
 
 @media screen and (max-width: 600px) {
@@ -707,7 +714,7 @@ a:active {
 		display: block;
 		float: none;
 		background: #313131;
-		background: hsl(0, 0%, 19%);
+		
 	}
 	
 	.main-navigation ul ul a { width: 100%; }
@@ -715,7 +722,7 @@ a:active {
 	.main-navigation ul a:hover,
 	.main-navigation ul ul a:hover {
 		background: #4d4d4d;
-		background: hsl(0, 0%, 30%);
+		
 	}
 
 	.main-navigation .current_page_ancestor { background: inherit; }
@@ -730,9 +737,8 @@ a:active {
 	.main-navigation .current_page_item li:hover,
 	.main-navigation .current_page_parent .current_page_item > a  {
 		color: #fff;
-		color: hsl(0, 0%, 100%);
-		background: #4d4d4d;
-		background: hsl(0, 0%, 30%);    
+		background: ##3f7b2d;
+	 
 	}
         
 } // End responsive menu
@@ -909,6 +915,7 @@ a:active {
     text-align: center;
     background: #2c86ba;
     background: hsl(202, 62%, 45%);
+    display:none;
 }
 
 .site-title {
